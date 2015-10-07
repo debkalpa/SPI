@@ -22,12 +22,12 @@ SPIClass SPI;
 #elif defined(__AVR_ATtiny24__) || defined(__AVR_ATtiny44__) || defined(__AVR_ATtiny84__)
 // these depend on the core used (check pins_arduino.h)
 
-//the real deal starts here
+//FlexiLab edit starts here
 #	define DI   6   // PA6
 #	define DO   5   // PA5
 #	define USCK 4   // PA4
 #	define SS   7   // PA7; this is CSN for RF communication
-//the real deal ends here
+//FlexiLab edit ends here
 
 #endif
 
