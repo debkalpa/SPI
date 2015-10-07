@@ -21,11 +21,14 @@ SPIClass SPI;
 #	define SS   3  // D3, pin 2  Slave Select
 #elif defined(__AVR_ATtiny24__) || defined(__AVR_ATtiny44__) || defined(__AVR_ATtiny84__)
 // these depend on the core used (check pins_arduino.h)
-// this is for jeelabs' one (based on google-code core)
-#	define DI   4   // PA6
+
+//the real deal starts here
+#	define DI   6   // PA6
 #	define DO   5   // PA5
-#	define USCK 6   // PA4
-#	define SS   3   // PA7
+#	define USCK 4   // PA4
+#	define SS   7   // PA7; this is CSN for RF communication
+//the real deal ends here
+
 #endif
 
 void SPIClass::begin() {
